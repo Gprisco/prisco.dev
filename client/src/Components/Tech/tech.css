@@ -1,0 +1,42 @@
+.card {
+  background-color: #5bc2eb28;
+  border: none;
+  padding: 10px;
+}
+
+.card-text {
+  font-size: 16pt;
+  font-weight: normal;
+}
+
+.card-title {
+  font-family: "Montserrat";
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: left;
+}
+
+.h3 {
+  font-family: "Montserrat";
+  color: inherit;
+}
+
+#tech-stack {
+  padding-top: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .h3 {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  #tech-stack {
+    padding-top: 0px;
+  }
+}

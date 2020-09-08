@@ -1,0 +1,50 @@
+import React from "react";
+
+const Card = ({ tech }) => {
+  return (
+    <div className="col-12 my-4">
+      <div className="card">
+        <div className="card-body">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="card-title">{tech.title}</div>
+              </div>
+            </div>
+            {tech.id % 2 === 0 && (
+              <div className="row">
+                <div className="col-md-12 col-lg-4 my-auto">
+                  <img
+                    className="responsive-img"
+                    src={require(`./img/${tech.image}.png`)}
+                    alt=""
+                  />
+                </div>
+                <div className="col-md-12 col-lg-8 my-auto">
+                  <p className="card-text mt-3 p-2">{tech.paragraph}</p>
+                </div>
+              </div>
+            )}
+
+            {tech.id % 2 !== 0 && (
+              <div className="row">
+                <div className="col-md-12 col-lg-8 my-auto">
+                  <p className="card-text mt-3 p-2 ">{tech.paragraph}</p>
+                </div>
+                <div className="col-md-12 col-lg-4 my-auto">
+                  <img
+                    className="responsive-img"
+                    src={require(`./img/${tech.image}.png`)}
+                    alt=""
+                  />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;

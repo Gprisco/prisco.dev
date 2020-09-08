@@ -1,0 +1,32 @@
+.navbar {
+  box-shadow: 1px 1px 8px #36382e28;
+}
+
+.bg-light {
+  background-color: #ede6e3 !important;
+}
+
+.nav-link {
+  color: #36382ecc !important;
+}
+
+.nav-link:hover {
+  color: #36382e !important;
+}
+
+.nav-active {
+  visibility: visible;
+  transition: all 200ms ease-in;
+}
+
+.nav-hidden {
+  visibility: hidden;
+  transition: all 200ms ease-out;
+  transform: translate(0, -100%);
+}
+
+@media only screen and (max-width: 992px) {
+  .desktop-nav-item {
+    display: none;
+  }
+}

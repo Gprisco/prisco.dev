@@ -1,0 +1,47 @@
+.dot {
+  color: #5bc3eb;
+}
+
+.h1 {
+  font-size: 150pt;
+  color: inherit;
+  font-family: "Montserrat";
+}
+
+.hero-section {
+  min-height: 90vh;
+}
+
+.hero-text p {
+  font-size: 30pt;
+}
+
+.chevron-down {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  right: auto;
+}
+
+.chevron-icon {
+  position: relative;
+  left: -50%;
+  color: #36382e !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .chevron-down {
+    display: none;
+  }
+
+  .h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  p {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}

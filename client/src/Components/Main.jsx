@@ -1,0 +1,32 @@
+import React, { Component } from "react";
+import NavBar from "./Navbar";
+import Hero from "./Hero";
+import About from "./About";
+import Tech from "./Tech";
+import Contacts from "./Contacts";
+import Footer from "./Footer";
+
+class Main extends Component {
+  state = {
+    links: [
+      { to: "about", text: "about" },
+      { to: "tech-stack", text: "tech" },
+      { to: "contacts", text: "contacts" },
+    ],
+  };
+
+  render() {
+    return (
+      <React.Fragment>
+        <NavBar links={this.state.links} />
+        <Hero nextSection={this.state.links[0]} />
+        <About sectionId={this.state.links[0].to} />
+        <Tech sectionId={this.state.links[1].to} />
+        <Contacts sectionId={this.state.links[2].to} />
+        <Footer />
+      </React.Fragment>
+    );
+  }
+}
+
+export default Main;

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf")
+    format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("./fonts/Source_Sans_Pro/SourceSansPro-Light.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+body {
+  background-color: #ede6e3;
+  color: #36382e;
+  overflow-x: hidden !important;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: inherit;
+  font-size: 24pt;
+  font-weight: 300;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mobile-only {
+    display: flex !important;
+  }
+}
