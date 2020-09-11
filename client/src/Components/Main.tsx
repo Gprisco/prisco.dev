@@ -8,13 +8,13 @@ import Footer from "./Footer";
 
 export interface MainProps {}
 
-export type StateLink = {
+export type SectionLink = {
   to: string;
   text: string;
 };
 
 export interface MainState {
-  links: Array<StateLink>;
+  links: Array<SectionLink>;
 }
 
 class Main extends Component<MainProps, MainState> {

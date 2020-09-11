@@ -6,20 +6,33 @@ import {
 import Burger from "./Burger";
 import Menu from "./Burger/Menu";
 import "./nav.css";
+import { SectionLink } from "Components/Main";
 
-class NavBar extends Component {
+export interface NavBarProps {
+  links: Array<SectionLink>;
+}
+
+export interface NavBarState {
+  scrollPos: number;
+  show: boolean;
+  menuOpen: boolean;
+}
+
+class NavBar extends Component<NavBarProps, NavBarState> {
   state = {
     scrollPos: 0,
     show: true,
     menuOpen: false,
   };
 
-  constructor(props) {
+  burgerMenuRef: React.RefObject<any>;
+
+  constructor(props: NavBarProps) {
     super(props);
     this.burgerMenuRef = React.createRef();
   }
 
-  burgerMenuListener = (e) => {
+  burgerMenuListener = (e: Event): void => {
     if (
       !this.burgerMenuRef.current ||
       this.burgerMenuRef.current.contains(e.target)
@@ -32,7 +45,7 @@ class NavBar extends Component {
     document.removeEventListener("touchstart", this.burgerMenuListener);
   };
 
-  toggleMenu = () => {
+  toggleMenu = (): void => {
     const menuOpen = !this.state.menuOpen;
 
     if (menuOpen) {
@@ -44,23 +57,6 @@ class NavBar extends Component {
     }
 
     this.setState({ menuOpen });
-  };
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  handleScroll = () => {
-    //const { scrollPos } = this.state;
-
-    this.setState({
-      scrollPos: document.body.getBoundingClientRect().top,
-      //show: document.body.getBoundingClientRect().top > scrollPos,
-    });
   };
 
   render() {
