@@ -2,8 +2,8 @@ import React, { SFC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { HashLink as Link } from "react-router-hash-link";
-import "./hero.css";
 import { SectionLink } from "Components/Main";
+import "./hero.css";
 
 export interface HeroProps {
   nextSection: SectionLink;

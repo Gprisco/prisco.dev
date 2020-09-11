@@ -5,8 +5,8 @@ import {
 } from "react-router-hash-link";
 import Burger from "./Burger";
 import Menu from "./Burger/Menu";
-import "./nav.css";
 import { SectionLink } from "Components/Main";
+import "./nav.css";
 
 export interface NavBarProps {
   links: Array<SectionLink>;
