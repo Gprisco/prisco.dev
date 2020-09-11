@@ -1,5 +1,6 @@
 .navbar {
   box-shadow: 1px 1px 8px #36382e28;
+  position: relative;
 }
 
 .bg-light {

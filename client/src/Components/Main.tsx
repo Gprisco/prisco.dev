@@ -6,7 +6,18 @@ import Tech from "./Tech";
 import Contacts from "./Contacts";
 import Footer from "./Footer";
 
-class Main extends Component {
+export interface MainProps {}
+
+export type StateLink = {
+  to: string;
+  text: string;
+};
+
+export interface MainState {
+  links: Array<StateLink>;
+}
+
+class Main extends Component<MainProps, MainState> {
   state = {
     links: [
       { to: "about", text: "about" },
