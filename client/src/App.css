@@ -10,9 +10,14 @@
   src: url("./fonts/Source_Sans_Pro/SourceSansPro-Light.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
+:root {
+  --text: rgb(37, 50, 55);
+  --accent: #aa96ed;
+}
+
 body {
-  background-color: #ede6e3;
-  color: #36382e;
+  background-color: #f8f8f8;
+  color: var(--text);
   overflow-x: hidden !important;
 }
 

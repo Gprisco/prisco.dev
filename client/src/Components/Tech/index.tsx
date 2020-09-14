@@ -1,8 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
+import Card, { TechCard } from "./Card";
 import "./tech.css";
-import Card from "./Card";
 
-class Tech extends Component {
+export interface TechProps {
+  sectionId: string;
+}
+
+export interface TechState {
+  cards: Array<TechCard>;
+}
+
+class Tech extends React.Component<TechProps, TechState> {
   state = {
     cards: [
       {
@@ -24,7 +32,7 @@ class Tech extends Component {
         title: "iOS Mobile Development",
         paragraph:
           "My experience at the Apple Developer Academy gave me the opportunity to experiment with the newest Apple Technologies, especially for Machine Learning and Augmented Reality beyond UIKit and the brand new SwiftUI and I think they are awesome!",
-        image: "mobile",
+        image: "ios",
       },
     ],
   };

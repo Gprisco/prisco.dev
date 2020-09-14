@@ -22,7 +22,7 @@ class Main extends Component<MainProps, MainState> {
     links: [
       { to: "about", text: "about" },
       { to: "tech-stack", text: "tech" },
-      { to: "contacts", text: "contacts" },
+      { to: "contacts", text: "Reach me" },
     ],
   };
 

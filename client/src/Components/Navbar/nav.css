@@ -1,10 +1,9 @@
 .navbar {
-  box-shadow: 1px 1px 8px #36382e28;
   position: relative;
 }
 
 .bg-light {
-  background-color: #ede6e3 !important;
+  background-color: #f8f8f8 !important;
 }
 
 .nav-link {

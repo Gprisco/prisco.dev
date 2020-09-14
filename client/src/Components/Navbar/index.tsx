@@ -92,7 +92,7 @@ class NavBar extends Component<NavBarProps, NavBarState> {
             {links.map((link) => {
               return (
                 <NavLink
-                  className="desktop-nav-item nav-item nav-link m-3"
+                  className="desktop-nav-item nav-item nav-link m-3 w-25"
                   smooth
                   to={`#${link.to}`}
                   key={link.to}

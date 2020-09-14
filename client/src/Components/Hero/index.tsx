@@ -12,9 +12,9 @@ export interface HeroProps {
 const Hero: SFC<HeroProps> = ({ nextSection }) => {
   return (
     <section id="home" className="hero-section">
-      <div className="container pt-4">
-        <div className="row my-auto p-4">
-          <div className="col-md-12 col-lg-7 my-auto px-4">
+      <div className="container my-auto pb-4">
+        <div className="row">
+          <div className="col-md-12 col-lg-4 my-auto px-4">
             <div className="hero-text">
               <h5 className="h1">
                 Hi<span className="dot">.</span>
@@ -27,11 +27,11 @@ const Hero: SFC<HeroProps> = ({ nextSection }) => {
               </p>
             </div>
           </div>
-          <div className="col-md-12 col-lg-5 px-4">
+          <div className="col-md-12 col-lg-8 px-4">
             <img
               className="responsive-img"
-              src={require("./img/hero.png")}
-              alt=""
+              src={require("./img/hero.svg")}
+              alt="Hero"
             />
           </div>
         </div>

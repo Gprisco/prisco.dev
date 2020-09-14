@@ -1,5 +1,5 @@
 .dot {
-  color: #5bc3eb;
+  color: var(--accent);
 }
 
 .h1 {
