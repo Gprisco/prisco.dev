@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledMenu = styled.div`
   position: fixed;
   flex-direction: column;
-  background: #dadad9;
+  background: var(--text);
   height: 100vh;
   text-align: right;
   padding: 1.2rem;
@@ -20,5 +20,5 @@ export const StyledMenu = styled.div`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   display: flex;
   overflow-x: hidden !important;
-  color: #36382e;
+  color: #f8f8f8;
 `;

@@ -58,7 +58,7 @@ class Contacts extends React.Component<ContactsProps, ContactsState> {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h4 className="h3 text-center">Reach me</h4>
+              <h4 className="h3 text-center mb-4">Reach me</h4>
             </div>
           </div>
           <div className="row">
@@ -66,7 +66,7 @@ class Contacts extends React.Component<ContactsProps, ContactsState> {
               return (
                 <div
                   key={icon.id}
-                  className="contact-link col-md-6 col-lg-3 text-center p-2 my-4"
+                  className="contact-link col-md-6 col-lg-3 text-center my-1"
                 >
                   <div className="row">
                     <a
@@ -79,7 +79,9 @@ class Contacts extends React.Component<ContactsProps, ContactsState> {
                     </a>
                   </div>
                   <div className="row mt-2 text-center">
-                    <p className="lead w-100">{icon.description}</p>
+                    <p className="lead w-100 icon-description">
+                      {icon.description}
+                    </p>
                   </div>
                 </div>
               );

@@ -16,6 +16,10 @@
   font-size: 30pt;
 }
 
+.hero-left {
+  z-index: 1;
+}
+
 .chevron-down {
   position: absolute;
   bottom: 3%;
@@ -39,9 +43,14 @@
     text-align: center;
   }
 
-  p {
+  .hero-paragraph {
     max-width: 100%;
     text-align: center;
     margin-bottom: 100px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
   }
 }

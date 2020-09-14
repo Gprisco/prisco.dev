@@ -4,7 +4,7 @@
 }
 
 .about {
-  font-weight: normal;
+  font-weight: 550 !important;
 }
 
 @media only screen and (max-width: 992px) {

@@ -1,7 +1,12 @@
 import React from "react";
 import { StyledBurger } from "./Burger.styled";
 
-const Burger = ({ open, toggleMenu }) => {
+export interface BurgerProps {
+  open: boolean;
+  toggleMenu: VoidFunction;
+}
+
+const Burger: React.SFC<BurgerProps> = ({ open, toggleMenu }) => {
   return (
     <StyledBurger open={open} onClick={toggleMenu}>
       <div />

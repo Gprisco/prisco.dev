@@ -14,12 +14,12 @@ const Hero: SFC<HeroProps> = ({ nextSection }) => {
     <section id="home" className="hero-section">
       <div className="container my-auto pb-4">
         <div className="row">
-          <div className="col-md-12 col-lg-4 my-auto px-4">
-            <div className="hero-text">
+          <div className="col-md-12 col-lg-7 hero-left my-auto">
+            <div className="hero-text my-auto py-4">
               <h5 className="h1">
                 Hi<span className="dot">.</span>
               </h5>
-              <p>
+              <p className="hero-paragraph">
                 I'm Giovanni Prisco, a software engineer based in Salerno{" "}
                 <span role="img" aria-label="sun">
                   ☀️
@@ -27,13 +27,19 @@ const Hero: SFC<HeroProps> = ({ nextSection }) => {
               </p>
             </div>
           </div>
-          <div className="col-md-12 col-lg-8 px-4">
-            <img
-              className="responsive-img"
-              src={require("./img/hero.svg")}
-              alt="Hero"
-            />
+
+          <div className="col-lg-5 col-md-12 mt-sm-0 pt-sm-0">
+            <div className="position-relative">
+              <img
+                className="mx-auto d-block hero-img"
+                src={require("./img/hero.svg")}
+                alt="Hero"
+                width="800"
+              />
+            </div>
           </div>
+
+          <div className="col-md-12 col-lg-5  h-100"></div>
         </div>
         <div className="chevron-down">
           <div className="chevron-icon">

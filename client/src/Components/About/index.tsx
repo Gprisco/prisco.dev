@@ -17,8 +17,10 @@ const About: React.SFC<AboutProps> = ({ sectionId }) => {
         <div className="row">
           <div className="col">
             <p className="mt-3 about lead">
-              I'm a <b>Software Engineer</b> and a student at University of
-              Salerno. ‍I love what I do, it's <b>addictive</b>.‍
+              Hello there! As I said, I am a software engineer, I like defining
+              myself as a <b>Full-Stack Web Developer</b>, in my job I'm able to
+              work with backend as well as with frontend. ‍I love what I do,
+              it's <b>addictive</b>.‍
               <br />
               <br />
               Computer programming has always been a passion for me and whether
@@ -48,7 +50,8 @@ const About: React.SFC<AboutProps> = ({ sectionId }) => {
               When I'm not working alongside clients, I'm{" "}
               <b>constantly learning</b> new things, whether it is for the
               University or for some personal projects. As a matter of fact, I'm
-              always trying to expand my tool-belt. Currently I'm diving deeper
+              always trying to expand my tool-belt while still trying to reach
+              an expertise level in Web Development. Currently I'm diving deeper
               in the AI world and I recently got the{" "}
               <i>"AI Programming with Python" nanodegree</i> from Udacity.
             </p>

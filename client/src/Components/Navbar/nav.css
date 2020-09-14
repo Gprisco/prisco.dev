@@ -7,11 +7,11 @@
 }
 
 .nav-link {
-  color: #36382ecc !important;
+  color: var(--text) !important;
 }
 
-.nav-link:hover {
-  color: #36382e !important;
+.burger-link {
+  color: #f8f8f8 !important;
 }
 
 .nav-active {

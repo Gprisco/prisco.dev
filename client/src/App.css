@@ -36,11 +36,6 @@ p {
   font-weight: 300;
 }
 
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .App {
   text-align: center;
 }
