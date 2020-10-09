@@ -1,21 +1,16 @@
-import React, { SFC } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { HashLink as Link } from "react-router-hash-link";
-import { SectionLink } from "Components/Main";
+import React, { FunctionComponent } from "react";
 import "./hero.css";
 
 export interface HeroProps {
-  nextSection: SectionLink;
 }
 
-const Hero: SFC<HeroProps> = ({ nextSection }) => {
+const Hero: FunctionComponent<HeroProps> = () => {
   return (
     <section id="home" className="hero-section">
       <div className="container my-auto pb-4">
         <div className="row">
           <div className="col-md-12 col-lg-7 hero-left my-auto">
-            <div className="hero-text my-auto py-4">
+            <div className="hero-text py-4">
               <h5 className="h1">
                 Hi<span className="dot">.</span>
               </h5>
@@ -40,13 +35,6 @@ const Hero: SFC<HeroProps> = ({ nextSection }) => {
           </div>
 
           <div className="col-md-12 col-lg-5  h-100"></div>
-        </div>
-        <div className="chevron-down">
-          <div className="chevron-icon">
-            <Link smooth to={`#${nextSection.to}`}>
-              <FontAwesomeIcon icon={faChevronDown} size="2x" />
-            </Link>
-          </div>
         </div>
       </div>
     </section>

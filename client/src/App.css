@@ -15,9 +15,16 @@
   --accent: #aa96ed;
 }
 
+
+
 body {
   background-color: #f8f8f8;
   color: var(--text);
+  overflow-x: hidden !important;
+}
+
+#root {
+  position: relative;
   overflow-x: hidden !important;
 }
 

@@ -22,7 +22,7 @@ class Main extends Component<MainProps, MainState> {
     links: [
       { to: "about", text: "about" },
       { to: "tech-stack", text: "tech" },
-      { to: "contacts", text: "Reach me" },
+      { to: "contacts", text: "reach me" },
     ],
   };
 
@@ -30,7 +30,7 @@ class Main extends Component<MainProps, MainState> {
     return (
       <React.Fragment>
         <NavBar links={this.state.links} />
-        <Hero nextSection={this.state.links[0]} />
+        <Hero />
         <About sectionId={this.state.links[0].to} />
         <Tech sectionId={this.state.links[1].to} />
         <Contacts sectionId={this.state.links[2].to} />

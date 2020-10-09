@@ -13,7 +13,7 @@ export const StyledMenu = styled.div`
   text-transform: uppercase;
   top: 0;
   right: 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-out;
   box-shadow: ${({ open }) =>
     open ? "5px 3px 10px rgba(0, 0, 0, 0.2)" : "none"};
   width: 62%;
