@@ -6,6 +6,8 @@ import Tech from "./Tech";
 import Contacts from "./Contacts";
 import Footer from "./Footer";
 
+import PreLoader from "./PreLoader";
+
 export interface MainProps {}
 
 export type SectionLink = {
@@ -15,6 +17,8 @@ export type SectionLink = {
 
 export interface MainState {
   links: Array<SectionLink>;
+  loading: boolean;
+  showingLoader: boolean;
 }
 
 class Main extends Component<MainProps, MainState> {
@@ -24,18 +28,35 @@ class Main extends Component<MainProps, MainState> {
       { to: "tech-stack", text: "tech" },
       { to: "contacts", text: "reach me" },
     ],
+    loading: true,
+    showingLoader: true,
   };
 
+  componentDidMount() {
+    window.onload = () => {
+      this.setState({ loading: false });
+    };
+  }
+
+  componentDidUpdate() {
+    if (this.state.showingLoader)
+      setTimeout(() => this.setState({ showingLoader: false }), 350);
+  }
+
   render() {
-    return (
-      <React.Fragment>
-        <NavBar links={this.state.links} />
+    const { loading, showingLoader, links } = this.state;
+
+    return showingLoader ? (
+      <PreLoader className={loading ? "" : "op-0"} />
+    ) : (
+      <>
+        <NavBar links={links} />
         <Hero />
-        <About sectionId={this.state.links[0].to} />
-        <Tech sectionId={this.state.links[1].to} />
-        <Contacts sectionId={this.state.links[2].to} />
+        <About sectionId={links[0].to} />
+        <Tech sectionId={links[1].to} />
+        <Contacts sectionId={links[2].to} />
         <Footer />
-      </React.Fragment>
+      </>
     );
   }
 }
