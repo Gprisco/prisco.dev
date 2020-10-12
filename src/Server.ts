@@ -30,7 +30,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(helmet());
 }
 
-// Add APIs
+/************************************************************************************
+ *                              Serve front-end content
+ ***********************************************************************************/
 app.use(express.static(path.join(__dirname, "../", "client", "build")));
 
 app.get("/*", (req, res) => {
@@ -43,18 +45,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   return res.status(BAD_REQUEST).json({
     error: err.message,
   });
-});
-
-/************************************************************************************
- *                              Serve front-end content
- ***********************************************************************************/
-
-const viewsDir = path.join(__dirname, "views");
-app.set("views", viewsDir);
-const staticDir = path.join(__dirname, "public");
-app.use(express.static(staticDir));
-app.get("*", (req: Request, res: Response) => {
-  res.sendFile("index.html", { root: viewsDir });
 });
 
 // Export express instance
