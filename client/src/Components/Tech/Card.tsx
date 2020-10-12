@@ -19,7 +19,9 @@ const Card: React.FunctionComponent<CardProps> = ({ tech }) => {
           <div className="container">
             <div className="row">
               <div className="col">
-                <div className="card-title">{tech.title}</div>
+                <div className="card-title">
+                  <h3 className="h3 font-weight-bold">{tech.title}</h3>
+                </div>
               </div>
             </div>
             {tech.id % 2 === 0 && (
