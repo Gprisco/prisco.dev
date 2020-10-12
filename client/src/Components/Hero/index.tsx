@@ -1,16 +1,15 @@
 import React, { FunctionComponent } from "react";
 import "./hero.css";
 
-export interface HeroProps {
-}
+export interface HeroProps {}
 
 const Hero: FunctionComponent<HeroProps> = () => {
   return (
     <section id="home" className="hero-section">
       <div className="container my-auto pb-4">
         <div className="row">
-          <div className="col-md-12 col-lg-7 hero-left my-auto">
-            <div className="hero-text py-4">
+          <div className="col-md-12 col-lg-6 hero-left my-auto">
+            <div className="hero-text py-4 pl-4">
               <h5 className="h1">
                 Hi<span className="dot">.</span>
               </h5>
@@ -23,15 +22,13 @@ const Hero: FunctionComponent<HeroProps> = () => {
             </div>
           </div>
 
-          <div className="col-lg-5 col-md-12 mt-sm-0 pt-sm-0">
-            <div className="position-relative">
-              <img
-                className="mx-auto d-block hero-img"
-                src={require("./img/hero.svg")}
-                alt="Hero"
-                width="800"
-              />
-            </div>
+          <div className="col-lg-6 col-md-12 mt-sm-0 pt-sm-0">
+            <img
+              className="mx-auto d-block hero-img"
+              src={require("./img/hero.svg")}
+              alt="Hero"
+              width="auto"
+            />
           </div>
 
           <div className="col-md-12 col-lg-5  h-100"></div>
