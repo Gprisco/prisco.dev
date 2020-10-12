@@ -5,7 +5,7 @@ export interface AboutProps {
   sectionId: string;
 }
 
-const About: React.SFC<AboutProps> = ({ sectionId }) => {
+const About: React.FunctionComponent<AboutProps> = ({ sectionId }) => {
   return (
     <section id={sectionId}>
       <div className="container">

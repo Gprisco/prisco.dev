@@ -6,7 +6,7 @@ export interface BurgerProps {
   toggleMenu: VoidFunction;
 }
 
-const Burger: React.SFC<BurgerProps> = ({ open, toggleMenu }) => {
+const Burger: React.FunctionComponent<BurgerProps> = ({ open, toggleMenu }) => {
   return (
     <StyledBurger open={open} onClick={toggleMenu}>
       <div />

@@ -3,7 +3,7 @@ import "./footer.css";
 
 export interface FooterProps {}
 
-const Footer: React.SFC<FooterProps> = () => {
+const Footer: React.FunctionComponent<FooterProps> = () => {
   return (
     <footer className="mt-4 footer">
       <div className="container p-4">

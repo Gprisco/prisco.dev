@@ -9,7 +9,11 @@ export interface MenuProps {
   toggleMenu: VoidFunction;
 }
 
-const Menu: React.SFC<MenuProps> = ({ open, links, toggleMenu }) => {
+const Menu: React.FunctionComponent<MenuProps> = ({
+  open,
+  links,
+  toggleMenu,
+}) => {
   return (
     <StyledMenu className="sidebar" open={open}>
       <ul className="nav h-100 d-flex flex-column justify-content-center">

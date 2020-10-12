@@ -11,7 +11,7 @@ export interface CardProps {
   tech: TechCard;
 }
 
-const Card: React.SFC<CardProps> = ({ tech }) => {
+const Card: React.FunctionComponent<CardProps> = ({ tech }) => {
   return (
     <div className="col-12 my-4">
       <div className="card">
