@@ -11,7 +11,7 @@ const About: React.SFC<AboutProps> = ({ sectionId }) => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h4 className="h3 text-center">About Me</h4>
+            <h4 className="h3 text-center mt-2">About Me</h4>
           </div>
         </div>
         <div className="row">
