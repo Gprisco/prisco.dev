@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBar from "./Navbar";
 import Hero from "./Hero";
 import About from "./About";
+import Timeline from "./Timeline";
 import Tech from "./Tech";
 import Contacts from "./Contacts";
 import Footer from "./Footer";
@@ -25,6 +26,7 @@ class Main extends Component<MainProps, MainState> {
   state = {
     links: [
       { to: "about", text: "about" },
+      { to: "experience", text: "experience" },
       { to: "tech-stack", text: "tech" },
       { to: "contacts", text: "reach me" },
     ],
@@ -53,8 +55,9 @@ class Main extends Component<MainProps, MainState> {
         <NavBar links={links} />
         <Hero />
         <About sectionId={links[0].to} />
-        <Tech sectionId={links[1].to} />
-        <Contacts sectionId={links[2].to} />
+        <Timeline sectionId={links[1].to} />
+        <Tech sectionId={links[2].to} />
+        <Contacts sectionId={links[3].to} />
         <Footer />
       </>
     );
