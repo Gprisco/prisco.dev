@@ -15,17 +15,17 @@ class Tech extends React.Component<TechProps, TechState> {
     cards: [
       {
         id: 1,
-        title: "Front-end Web Development",
+        title: "Back-end Web Development",
         paragraph:
-          "One of my main skill is to design and develop responsive, high quality web applications using the newest and most performant technologies.",
-        image: "frontend",
+          "One of my main skill is to design and develop robust, scalable, high quality backend applications using the newest and most performant technologies.",
+        image: "backend",
       },
       {
         id: 2,
-        title: "Back-end Web Development",
+        title: "Front-end Web Development",
         paragraph:
-          "In addition to developing frontend applications, I'm also able to design and develop robust and scalable backend systems allowing me to be as much flexible as possible when working on a full-stack project.",
-        image: "backend",
+          "In addition to developing backend applications, I'm also able to design and develop responsive and high-quality frontend applications, allowing me to be as much flexible as possible when working on a full-stack project.",
+        image: "frontend",
       },
       {
         id: 3,
