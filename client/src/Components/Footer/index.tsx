@@ -9,7 +9,13 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
       <div className="container p-4">
         <div className="row">
           <div className="col">
-            <div className="row">Developed with React</div>
+            <div className="row">
+              Developed with
+              <span className="mx-1" role="img" aria-label="sun">
+                ❤️
+              </span>{" "}
+              and React{" "}
+            </div>
             <div className="row">
               <p className="footer-p">
                 Illustrations by{" "}
