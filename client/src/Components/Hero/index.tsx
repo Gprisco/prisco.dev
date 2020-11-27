@@ -5,8 +5,8 @@ export interface HeroProps {}
 
 const Hero: FunctionComponent<HeroProps> = () => {
   return (
-    <section id="home" className="hero-section">
-      <div className="container my-auto pb-4">
+    <section id="home" className="hero-section d-flex align-items-center">
+      <div className="container">
         <div className="row">
           <div className="col-md-12 col-lg-6 hero-left my-auto">
             <div className="hero-text py-4 pl-4">
