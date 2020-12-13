@@ -33,6 +33,10 @@
   color: #36382e !important;
 }
 
+.contact-link:hover {
+  color: var(--accent);
+}
+
 @media only screen and (max-width: 992px) {
   .chevron-down {
     display: none;
