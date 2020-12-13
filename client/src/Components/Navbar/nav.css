@@ -2,6 +2,11 @@
   position: fixed;
   width: 100vw;
   height: 100px;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar-collapse {
+  height: 80px;
 }
 
 .bg-light {

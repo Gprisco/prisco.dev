@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
+
 import "./timeline.css";
 
 export interface TimelineProps {}
@@ -48,7 +49,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
 
   return (
     <section>
-      <div className="container mt-2">
+      <div data-aos="fade-right" className="container mt-2">
         <div className="row">
           <div className="col">
             <h4 className="h3 text-center mt-2">Experience</h4>

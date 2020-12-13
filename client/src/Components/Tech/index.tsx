@@ -1,5 +1,6 @@
 import React from "react";
 import Card, { TechCard } from "./Card";
+
 import "./tech.css";
 
 export interface TechProps {}
@@ -38,7 +39,7 @@ class Tech extends React.Component<TechProps, TechState> {
   render() {
     return (
       <section>
-        <div className="container">
+        <div data-aos="fade-right" className="container">
           <div className="row">
             <div className="col">
               <h3 className="h3 text-center">Tech</h3>

@@ -6,6 +6,7 @@ import {
 import Burger from "./Burger";
 import Menu from "./Burger/Menu";
 import { SectionLink } from "Components/Main";
+
 import "./nav.css";
 
 export interface NavBarProps {
@@ -65,6 +66,7 @@ class NavBar extends Component<NavBarProps, NavBarState> {
 
     return (
       <nav
+        data-aos="fade-down"
         className={`navbar sticky-top navbar-light bg-light ${
           show ? "nav-active" : "nav-hidden"
         }`}

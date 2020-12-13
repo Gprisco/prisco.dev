@@ -10,6 +10,9 @@ import Spacer from "./Spacer";
 
 import PreLoader from "./PreLoader";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export interface MainProps {}
 
 export type SectionLink = {
@@ -38,6 +41,9 @@ class Main extends Component<MainProps, MainState> {
     window.onload = () => {
       this.setState({ loading: false });
     };
+
+    AOS.init();
+    AOS.refresh();
   }
 
   componentDidUpdate() {

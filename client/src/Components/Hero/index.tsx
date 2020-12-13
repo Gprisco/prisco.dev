@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -6,6 +6,9 @@ import {
   faGithub,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./hero.css";
 
@@ -46,11 +49,18 @@ const Hero: FunctionComponent<HeroProps> = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="home" className="hero-section d-flex align-items-center">
       <div className="container">
         <div className="row">
-          <div className="col-md-12 col-lg-6 hero-left my-auto">
+          <div
+            data-aos="fade-right"
+            className="col-md-12 col-lg-6 hero-left my-auto"
+          >
             <div className="hero-text py-4 pl-4">
               <h5 className="h1">
                 Hi<span className="dot">.</span>
@@ -64,7 +74,10 @@ const Hero: FunctionComponent<HeroProps> = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-12 mt-sm-0 pt-sm-0">
+          <div
+            data-aos="fade-left"
+            className="col-lg-6 col-md-12 mt-sm-0 pt-sm-0"
+          >
             <img
               className="mx-auto d-block hero-img"
               src={require("./img/hero.svg")}
@@ -73,7 +86,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
             />
           </div>
 
-          <div className="col-lg-4 col-md-12 my-auto">
+          <div data-aos="fade-up" className="col-lg-4 col-md-12 my-auto">
             <div className="row pb-4 pl-4">
               {icons.map((icon) => {
                 return (

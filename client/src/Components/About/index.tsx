@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./about.css";
 
 export interface AboutProps {}
@@ -6,7 +7,7 @@ export interface AboutProps {}
 const About: React.FunctionComponent<AboutProps> = () => {
   return (
     <section>
-      <div className="container">
+      <div data-aos="slide-up" className="container">
         <div className="row">
           <div className="col">
             <h4 className="h3 text-center mt-2">About Me</h4>
