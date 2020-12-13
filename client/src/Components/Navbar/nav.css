@@ -1,5 +1,7 @@
 .navbar {
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  height: 100px;
 }
 
 .bg-light {

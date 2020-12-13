@@ -2,9 +2,7 @@ import React from "react";
 import Card, { TechCard } from "./Card";
 import "./tech.css";
 
-export interface TechProps {
-  sectionId: string;
-}
+export interface TechProps {}
 
 export interface TechState {
   cards: Array<TechCard>;
@@ -39,7 +37,7 @@ class Tech extends React.Component<TechProps, TechState> {
 
   render() {
     return (
-      <section id={this.props.sectionId}>
+      <section>
         <div className="container">
           <div className="row">
             <div className="col">

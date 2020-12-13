@@ -2,9 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import "./timeline.css";
 
-export interface TimelineProps {
-  sectionId: string;
-}
+export interface TimelineProps {}
 
 interface Experience {
   title: string;
@@ -13,7 +11,7 @@ interface Experience {
   link?: string;
 }
 
-const Timeline: React.FunctionComponent<TimelineProps> = ({ sectionId }) => {
+const Timeline: React.FunctionComponent<TimelineProps> = () => {
   const [experiences] = useState<Experience[]>([
     {
       title: "High School graduation",
@@ -49,7 +47,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = ({ sectionId }) => {
   ]);
 
   return (
-    <section id={sectionId}>
+    <section>
       <div className="container mt-2">
         <div className="row">
           <div className="col">

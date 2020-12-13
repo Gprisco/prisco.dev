@@ -1,13 +1,11 @@
 import React from "react";
 import "./about.css";
 
-export interface AboutProps {
-  sectionId: string;
-}
+export interface AboutProps {}
 
-const About: React.FunctionComponent<AboutProps> = ({ sectionId }) => {
+const About: React.FunctionComponent<AboutProps> = () => {
   return (
-    <section id={sectionId}>
+    <section>
       <div className="container">
         <div className="row">
           <div className="col">

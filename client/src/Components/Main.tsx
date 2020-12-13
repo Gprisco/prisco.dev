@@ -6,6 +6,8 @@ import Timeline from "./Timeline";
 import Tech from "./Tech";
 import Footer from "./Footer";
 
+import Spacer from "./Spacer";
+
 import PreLoader from "./PreLoader";
 
 export interface MainProps {}
@@ -52,9 +54,12 @@ class Main extends Component<MainProps, MainState> {
       <>
         <NavBar links={links} />
         <Hero />
-        <About sectionId={links[0].to} />
-        <Timeline sectionId={links[1].to} />
-        <Tech sectionId={links[2].to} />
+        <Spacer sectionId={links[0].to} />
+        <About />
+        <Spacer sectionId={links[1].to} />
+        <Timeline />
+        <Spacer sectionId={links[2].to} />
+        <Tech />
         <Footer />
       </>
     );
