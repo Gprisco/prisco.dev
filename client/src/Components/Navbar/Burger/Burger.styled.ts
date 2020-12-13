@@ -28,7 +28,6 @@ export const StyledBurger = styled.button`
       transition: transform 0.3s linear;
       position: relative;
       transform-origin: 1px;
-      margin-left: ${({ open }) => (open ? "62vw" : "15px")};
 
       :first-child {
         transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
@@ -37,7 +36,7 @@ export const StyledBurger = styled.button`
       :nth-child(2) {
         opacity: ${({ open }) => (open ? "0" : "1")};
         transform: ${({ open }) =>
-          open ? "translateX(20px)" : "translateX(0)"};
+          open ? "translateX(-20px)" : "translateX(0)"};
       }
 
       :nth-child(3) {
