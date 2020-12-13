@@ -10,6 +10,7 @@ import { SectionLink } from "Components/Main";
 import "./nav.css";
 
 export interface NavBarProps {
+  navbarRef: React.RefObject<HTMLElement>;
   links: Array<SectionLink>;
 }
 
@@ -66,6 +67,7 @@ class NavBar extends Component<NavBarProps, NavBarState> {
 
     return (
       <nav
+        ref={this.props.navbarRef}
         data-aos="fade-down"
         className={`navbar sticky-top navbar-light bg-light ${
           show ? "nav-active" : "nav-hidden"

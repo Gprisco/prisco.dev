@@ -27,6 +27,13 @@ export interface MainState {
 }
 
 class Main extends Component<MainProps, MainState> {
+  navbarRef: React.RefObject<HTMLElement>;
+
+  constructor(props: MainProps) {
+    super(props);
+    this.navbarRef = React.createRef();
+  }
+
   state = {
     links: [
       { to: "about", text: "about" },
@@ -40,6 +47,17 @@ class Main extends Component<MainProps, MainState> {
   componentDidMount() {
     window.onload = () => {
       this.setState({ loading: false });
+    };
+
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
+      ) {
+        this.navbarRef.current?.classList.add("shadow-sm");
+      } else {
+        this.navbarRef.current?.classList.remove("shadow-sm");
+      }
     };
 
     AOS.init();
@@ -58,7 +76,7 @@ class Main extends Component<MainProps, MainState> {
       <PreLoader className={loading ? "" : "op-0"} />
     ) : (
       <>
-        <NavBar links={links} />
+        <NavBar navbarRef={this.navbarRef} links={links} />
         <Hero />
         <Spacer sectionId={links[0].to} />
         <About />

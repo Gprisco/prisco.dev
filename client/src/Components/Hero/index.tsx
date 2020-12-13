@@ -56,6 +56,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
   return (
     <section id="home" className="hero-section d-flex align-items-center">
       <div className="container">
+        <div style={{ height: "100px" }} className="row mobile-only"></div>
         <div className="row">
           <div
             data-aos="fade-right"
