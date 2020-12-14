@@ -62,7 +62,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
             data-aos="fade-right"
             className="col-md-12 col-lg-6 hero-left my-auto"
           >
-            <div className="hero-text py-4 pl-4">
+            <div className="hero-text py-4">
               <h5 className="h1">
                 Hi<span className="dot">.</span>
               </h5>
@@ -88,7 +88,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
           </div>
 
           <div data-aos="fade-up" className="col-lg-4 col-md-12 my-auto">
-            <div className="row pb-4 pl-4">
+            <div className="row pb-4">
               {icons.map((icon) => {
                 return (
                   <div key={icon.id} className="col-3 text-center my-1">

@@ -33,14 +33,6 @@ const About: React.FunctionComponent<AboutProps> = () => {
               Naples.
               <br />
               <br />
-              If you think you have some good ideas to share, I will be very
-              happy to hear them from you, feel free to contact me{" "}
-              <span role="img" aria-label="confetti">
-                🥳
-              </span>
-              .‍
-              <br />
-              <br />
               Actually I'm studying <b>Computer Science</b> at University of
               Salerno and I'm for the second year at Apple Developer Academy in
               Naples as a <b>Pier Student</b> and <b>backend developer</b>.
