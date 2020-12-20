@@ -76,11 +76,11 @@ class NavBar extends Component<NavBarProps, NavBarState> {
         <div className="container">
           <div className="navbar-nav d-flex flex-row w-100 justify-content-end">
             <Link
-              className="nav-item w-100 navbar-brand m-3"
+              className="nav-item w-100 navbar-brand m-3 font-weight-light"
               smooth
               to="/#home"
             >
-              GP.
+              GP
             </Link>
 
             <div className="d-flex mobile-only" ref={this.burgerMenuRef}>
@@ -93,18 +93,21 @@ class NavBar extends Component<NavBarProps, NavBarState> {
               />
             </div>
 
-            {links.map((link) => {
-              return (
-                <NavLink
-                  className="desktop-nav-item nav-item nav-link m-3 w-25 text-center"
-                  smooth
-                  to={`#${link.to}`}
-                  key={link.to}
-                >
-                  {link.text}
-                </NavLink>
-              );
-            })}
+            <ul className="navbar-nav mr-auto flex-row">
+              {links.map((link) => {
+                return (
+                  <li
+                    key={link.to}
+                    className="desktop-nav-item nav-item my-auto mx-4 w-25 text-center"
+                  >
+                    <NavLink className="nav-link" smooth to={`#${link.to}`}>
+                      {link.text}
+                    </NavLink>
+                  </li>
+                );
+              })}
+              <div className="underbar"></div>
+            </ul>
           </div>
         </div>
       </nav>

@@ -23,7 +23,6 @@
 
 .nav-active {
   visibility: visible;
-  transition: all 200ms ease-in;
 }
 
 .nav-hidden {

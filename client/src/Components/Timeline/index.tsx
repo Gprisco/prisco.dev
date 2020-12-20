@@ -10,6 +10,7 @@ interface Experience {
   description: string;
   date: string;
   link?: string;
+  color?: string;
 }
 
 const Timeline: React.FunctionComponent<TimelineProps> = () => {
@@ -44,6 +45,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
         "Wineboard is a project I'm working on, it is a digital wine list for wine shops which helps them with selling wine and managing their supplies. I've been responsible of the whole full stack design and development of the platform, built using React and Node.js together with Express.",
       date: "February 2020 - now",
       link: "https://wineboard.io",
+      color: "#93024e",
     },
   ]);
 
@@ -56,13 +58,19 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
           </div>
         </div>
         {experiences.map((e) => (
-          <div className="timeline-item" date-is={e.date}>
+          <div key={e.title} className="timeline-item" date-is={e.date}>
             <h2 className="h2">{e.title}</h2>
             <p>{e.description}</p>
             {e.link && (
-              <a href={e.link} target="_blank" rel="noopener noreferrer">
-                Give it a look
-              </a>
+              <div className="btn-custom">
+                <a href={e.link} target="blank" rel="noopener">
+                  <p>
+                    <span className="bg"></span>
+                    <span className="base"></span>
+                    <span className="text">Give it a look</span>
+                  </p>
+                </a>
+              </div>
             )}
           </div>
         ))}

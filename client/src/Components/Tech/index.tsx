@@ -16,7 +16,7 @@ class Tech extends React.Component<TechProps, TechState> {
         id: 1,
         title: "Back-end Web Development",
         paragraph:
-          "One of my main skill is to design and develop robust, scalable, high quality backend applications using the newest and most performant technologies.",
+          "My main skill is to design and develop robust, scalable, high quality backend applications using the most modern and most performant technologies.",
         image: "backend",
       },
       {
@@ -39,10 +39,10 @@ class Tech extends React.Component<TechProps, TechState> {
   render() {
     return (
       <section>
-        <div data-aos="fade-right" className="container">
-          <div className="row">
+        <div className="container">
+          <div data-aos="fade-right" className="row">
             <div className="col">
-              <h3 className="h3 text-center">Tech</h3>
+              <h3 className="h3 text-center">Tech Stack</h3>
             </div>
           </div>
           <div className="row">

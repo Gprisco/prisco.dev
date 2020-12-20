@@ -13,7 +13,10 @@ export interface CardProps {
 
 const Card: React.FunctionComponent<CardProps> = ({ tech }) => {
   return (
-    <div className="col-12 my-4">
+    <div
+      data-aos={tech.id % 2 === 0 ? "fade-right" : "fade-left"}
+      className="col-12 my-4"
+    >
       <div className="card">
         <div className="card-body">
           <div className="container">
