@@ -38,7 +38,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
     {
       id: 3,
       icon: faMedium,
-      link: "https://medium.com/@gprisco01",
+      link: "https://medium.com/@gprisco",
       description: "Medium",
     },
     {
