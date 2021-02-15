@@ -29,7 +29,9 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
               </p>
             </div>
           </div>
-          <div className="col text-right">&copy; Giovanni Prisco 2020</div>
+          <div className="col text-right">
+            &copy; Giovanni Prisco 2020 - 2021
+          </div>
         </div>
       </div>
     </footer>
