@@ -16,15 +16,16 @@ const About: React.FunctionComponent<AboutProps> = () => {
         <div className="row">
           <div className="col">
             <p className="mt-3 about lead">
-              Hello there! As I said, I am a software engineer, I like defining
-              myself as a <b>Full-Stack Web Developer</b>, in my job I'm able to
-              work with backend as well as with frontend. ‍I love what I do,
-              it's <b>addictive</b>.‍
+              Hello there! As I said, I am a software engineer, more
+              specifically I'm a Backend Developer, which means I design and
+              develop what you can't see in an application. ‍
+              <br />
+              <br />I love what I do, it's <b>addictive</b>.‍
               <br />
               <br />
               Computer programming has always been a passion for me and whether
-              it regards developing a simple mobile application or building a
-              complex system, I <b>thoroughly enjoy</b> doing so.
+              it regards developing a simple application or building a complex
+              system, I <b>thoroughly enjoy</b> doing so.
               <br />
               <br />
               What I love the most about my job is to collaborate and stay in
@@ -33,18 +34,17 @@ const About: React.FunctionComponent<AboutProps> = () => {
               Naples.
               <br />
               <br />
-              Actually I'm studying <b>Computer Science</b> at University of
-              Salerno and I'm for the second year at Apple Developer Academy in
-              Naples as a <b>Pier Student</b> and <b>backend developer</b>.
+              I'm currently studying <b>Computer Science</b> at University of
+              Salerno and I'm an{" "}
+              <b>Application Developer - IBM Cloud Microservices @ IBM</b>.
               <br />
               <br />
-              When I'm not working alongside clients, I'm{" "}
-              <b>constantly learning</b> new things, whether it is for the
-              University or for some personal projects. As a matter of fact, I'm
-              always trying to expand my tool-belt while still trying to reach
-              an expertise level in Web Development. Currently I'm diving deeper
-              in the AI world and I recently got the{" "}
-              <i>"AI Programming with Python" nanodegree</i> from Udacity.
+              When I'm not working, I'm <b>constantly learning</b> new things,
+              whether it is for the University or for some personal projects. As
+              a matter of fact, I'm always trying to expand my tool-belt while
+              still trying to reach an expertise level in Backend Development,
+              as a matter of fact I'm currently diving deeper and deeper in
+              Cloud Native stuff.
             </p>
           </div>
         </div>
