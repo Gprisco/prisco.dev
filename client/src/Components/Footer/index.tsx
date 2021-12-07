@@ -30,7 +30,7 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
             </div>
           </div>
           <div className="col text-right">
-            &copy; Giovanni Prisco 2020 - 2021
+            &copy; Giovanni Prisco 2020 - {new Date().getFullYear()}
           </div>
         </div>
       </div>
