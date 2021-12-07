@@ -16,21 +16,21 @@ class Tech extends React.Component<TechProps, TechState> {
         id: 1,
         title: "Back-end Web Development",
         paragraph:
-          "My main skill is to design and develop robust, scalable, high quality backend applications using the most modern and most performant technologies.",
+          "My main skill is to design and develop robust, scalable, high quality backend applications using the most modern and most performant technologies, when there's the need to quickly develop some prototype or to spin up some APIs for accessing data in a database, my technology of choice is Node.js, which I use together with Typescript when the project gets bigger. Currently I'm learning Java EE and the Spring framework and I had the opportunity to try some Golang too.",
         image: "backend",
       },
       {
         id: 2,
-        title: "Front-end Web Development",
+        title: "Devops",
         paragraph:
-          "In addition to developing backend applications, I'm also able to design and develop responsive and high-quality frontend applications, allowing me to be as much flexible as possible when working on a full-stack project.",
+          "When it comes to devops I still have much to learn, my experience includes building some GitHub actions to automate unit testing and the deployment of the application (using Docker) to the production server. I also had the opportunity to configure some serious monitoring for production applications using Prometheus and building dashboards with Grafana",
         image: "frontend",
       },
       {
         id: 3,
-        title: "iOS Mobile Development",
+        title: "What about some frontend?",
         paragraph:
-          "My experience at the Apple Developer Academy gave me the opportunity to experiment with the newest Apple Technologies, especially for Machine Learning and Augmented Reality beyond UIKit and the brand new SwiftUI and I think they are awesome!",
+          "In my job I sometimes find myself building some prototypes for easily integrating and demonstrating system functionalities, this allowed me to learn some basic frontend development with React",
         image: "ios",
       },
     ],
@@ -42,7 +42,7 @@ class Tech extends React.Component<TechProps, TechState> {
         <div className="container">
           <div data-aos="fade-right" className="row">
             <div className="col">
-              <h3 className="h3 text-center">Tech Stack</h3>
+              <h3 className="h3 text-center">What I practically do</h3>
             </div>
           </div>
           <div className="row">
