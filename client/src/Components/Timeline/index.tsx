@@ -40,12 +40,12 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
       date: "July 2020 - now",
     },
     {
-      title: "The Wineboard Project",
+      title: "Decanto",
       description:
-        "Wineboard is a project I'm working on, it is a digital wine list for wine shops which helps them with selling wine and managing their supplies. I've been responsible of the whole full stack design and development of the platform, built using React and Node.js together with Express.",
-      date: "February 2020 - now",
-      link: "https://wineboard.io",
-      color: "#93024e",
+        "Decanto is a mobile application for pairing food and wine. I'm in charge of developing and mantaining the REST APIs which are implemented by the application for providing data and compute the pairings between food and wines.",
+      date: "July 2021 - On Going",
+      link: "https://decanto.wine",
+      color: "#6d083c",
     },
   ]);
 
