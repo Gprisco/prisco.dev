@@ -30,7 +30,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
     {
       title: "Enterprise Student @ Apple Developer Academy",
       description:
-        "During the 2019-2020 I have been studying Swift Development at Apple Developer Academy in Naples. What made this year so awesome was the fact that I had the opportunity to experience UI/UX design and to see how the business stuff is managed when building a real-world product while specializing myself in developing backend solutions thanks to the Enterprise class.",
+        "During the 2019-2020 I have been studying Swift Development at Apple Developer Academy in Naples. I experienced UI/UX design and saw how to develop a business plan and the consequent business model when building a real-world product, in the meanwhile I was practicing server side development thanks to the Enterprise class.",
       date: "September 2019 - July 2020",
     },
     {
