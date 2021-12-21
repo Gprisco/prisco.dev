@@ -25,7 +25,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
       title: "Computer Science student",
       description:
         "After high school I started my Computer Science degree program at Università degli Studi di Salerno.",
-      date: "September 2019 - June 2022 (expected)",
+      date: "September 2019 - now",
     },
     {
       title: "Enterprise Student @ Apple Developer Academy",
@@ -37,7 +37,13 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
       title: "Pier student as backend developer @ Apple Developer Academy",
       description:
         "During my first year at the Academy I realized how much I loved that kind of environment, with lots of amazing people and a lot of things to learn while actually doing them, so I'm now a Pier Student at Apple Developer Academy working on partner projects as a backend developer.",
-      date: "July 2020 - now",
+      date: "July 2020 - July 2021",
+    },
+    {
+      title: "Application Developer - IBM Cloud Microservices @ IBM",
+      description:
+        "I recently started a new job, I'm an Application Developer in the Cloud practice @ IBM CIC in Naples.",
+      date: "November 2021 - now",
     },
     {
       title: "Decanto",
