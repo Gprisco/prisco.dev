@@ -67,7 +67,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
                 Hi<span className="dot">.</span>
               </h5>
               <p className="hero-paragraph">
-                I'm Giovanni Prisco, a software engineer based in Salerno{" "}
+                I'm Giovanni Prisco, a charismatic Software Engineer {" "}
                 <span role="img" aria-label="sun">
                   ☀️
                 </span>

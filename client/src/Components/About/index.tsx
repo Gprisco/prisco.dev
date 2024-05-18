@@ -34,11 +34,6 @@ const About: React.FunctionComponent<AboutProps> = () => {
               Naples.
               <br />
               <br />
-              I'm currently studying <b>Computer Science</b> at University of
-              Salerno and I'm an{" "}
-              <b>Application Developer - IBM Cloud Microservices @ IBM</b>.
-              <br />
-              <br />
               When I'm not working, I'm <b>constantly learning</b> new things,
               whether it is for the University or for some personal projects. As
               a matter of fact, I'm always trying to expand my tool-belt while

@@ -25,7 +25,7 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
       title: "Computer Science student",
       description:
         "After high school I started my Computer Science degree program at Università degli Studi di Salerno.",
-      date: "September 2019 - now",
+      date: "September 2019 - October 2022",
     },
     {
       title: "Enterprise Student @ Apple Developer Academy",
@@ -40,18 +40,26 @@ const Timeline: React.FunctionComponent<TimelineProps> = () => {
       date: "July 2020 - July 2021",
     },
     {
-      title: "Application Developer - IBM Cloud Microservices @ IBM",
-      description:
-        "I recently started a new job, I'm an Application Developer in the Cloud practice @ IBM CIC in Naples.",
-      date: "November 2021 - now",
-    },
-    {
-      title: "Decanto",
+      title: "Software Engineer - Decanto @ Squidbay",
       description:
         "Decanto is a mobile application for pairing food and wine. I'm in charge of developing and mantaining the REST APIs which are implemented by the application for providing data and compute the pairings between food and wines.",
-      date: "July 2021 - On Going",
+      date: "July 2021 - November 2021",
       link: "https://decanto.wine",
       color: "#6d083c",
+    },
+    {
+      title: "Application Developer - IBM Cloud Microservices @ IBM",
+      description:
+        "I have been developing microservices at IBM CIC for a banking client using Java and IBM technologies, such as IBM DB2 and Websphere application server.",
+      date: "November 2021 - February 2023",
+    },
+    {
+      title: "Software Engineer II @ Klarna",
+      description:
+        "Klarna is a leader buy now pay later company, offering digital financial products in multiple countries. As a Software Engineer, I designed the architecture and developed the services for underwriting Klarna customers following “you build it, you run it” philosophy",
+      date: "February 2023 - On Going",
+      link: "https://klarna.com",
+      color: "#FFA8CD",
     },
   ]);
 
